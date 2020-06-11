@@ -42,7 +42,9 @@ Trim-Galore output will be located in the `trim_out` directory.
 
 #### 3. Spades
 `spades.py -o spades_out -1 Sample_For_val_1.fq -2 Sample_Rev_val_2.fq -t threads`
+
 If you have multiple data set of one sample, you can use multiple set to make a assembly.
+
 `spades.py -o spades_out --pe1-1 Sample_For1_val_1.fq --pe1-2 Sample_Rev1_val_2.fq --pe2-1 Sample_For2_val_1.fq --pe2-2 Sample_Rev2_val_2.fq --pe3-1 Sample_For3_val_1.fq --pe3-2 Sample_Rev3_val_2.fq -t threads`
 
 Spades output will be located in the `spades_out` directory.
