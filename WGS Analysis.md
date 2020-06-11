@@ -15,8 +15,11 @@ Suppose you have a paired-end raw read files (Sample_For.fastq, Sample_Rev.fastq
 
 FastQC output will be located in the `fastqc_out` directory.
 > Sample_For_fastqc.html
+
 > Sample_For_fastqc.zip
+
 > Sample_Rev_fastqc.html
+
 > Sample_Rev_fastqc.zip
 
 If you open the `Sample_For_fastqc.html` or `Sample_For_fastqc.html`, you can check the quality of raw read file.
@@ -41,24 +44,45 @@ If you have multiple data set of one sample, you can use multiple set to make a 
 
 Spades output will be located in the `spades_out` directory.
 > assembly_graph.fastg
+
 > assembly_graph_with_scaffolds.gfa
+
 > before_rr.fasta
+
 > contigs.fasta
+
 > contigs.paths
+
 > dataset.info
+
 > input_datset.yaml
+
 > K21
+
 > K33
+
 > K55
+
+
 > K77
+
+
 > K99
+
 > K121
+
 > misc
+
 > params.txt
+
 > scaffolds.fasta
+
 > scaffolds.paths
+
 > spades.log
+
 > tmp
+
 > warnings.log
 
 #### 4. GTDB-TK
