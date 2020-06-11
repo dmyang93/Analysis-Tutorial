@@ -88,6 +88,74 @@ Spades output will be located in the `spades_out` directory.
 >
 > warnings.log
 
+`scaffolds.fasta` is genomic sequence of sample. 
+
+Finally, you remove phix sequence and scaffolds with a lenth less than 200bp.
+You can perform the tasks with `filter_phix.py` and `filter_over_num_spa.py`.
+
+`python filter_over_num_spa.py scaffolds.fasta 200`
+
+You can get `scaffolds_over_200.fasta`, in which scaffolds with a length less than 200bp were removed.
+
+`python filter_phix.py scaffolds_over200.fasta`
+
+You can get `scaffolds_over200.phix.bltn.out` and `scaffolds_over200.phixfiltered.fna`.
+
+`scaffolds_over200.phixfiltered.fna` is a final genomic sequence. You can change the name of the genomic sequence file.
+
+After filtering, statistical values of genomic sequence are calculated by `statistics.py`.
+
+`python statistics.py 200 scaffolds_over200.phixfiltered.fna`
+
+You can find the total length, length of the longest scaffold, the number of scaffolds, GC contents, N50 and L50 of the genomic sequece.
+
+The larger the N50 and the smaller the L50, the better the sequencing.
+
 #### 4. GTDB-TK
+Before taxononmic profiling, genomic sequence file should move to a directory.
+```
+mkdir sample_genome
+mv scaffolds_over200.phicxfiltered.fna sample_genome
+gtdbtk classify_wf --genome_dir sample_genome --out_dir gtdbtk_out -x fna --cpus threads
+```
+
+GTDB-TK output will be located in `gtdbtk_out` directory.
+
+> align
+>
+> classify
+>
+> gtdbtk.ar122.classify.tree
+>
+> gtdbtk.ar122.filtered.tsv
+>
+> gtdbtk.ar122.markers_summary.tsv
+>
+> gtdbtk.ar122.msa.fasta
+>
+> gtdbtk.ar122.summary.tsv
+>
+> gtdbtk.ar122.user_msa.fasta
+>
+> gtdbtk.bac120.classify.tree
+>
+> gtdbtk.bac120.filtered.tsv
+>
+> gtdbtk.bac120.markers_summary.tsv
+>
+> gtdbtk.bac120.msa.fasta
+>
+> gtdbtk.bac120.summary.tsv
+>
+> gtdbtk.bac120.user_msa.fasta
+>
+> gtdbtk.log
+> 
+> gtdbtk.translation_table_summary.tsv
+>
+> identity
+
+`gtdbtk.ar122.summary.tsv` and `gtdbtk.bac120.summary.tsv` are the taxonomic profile of the genomic sequence as the tab-seperated-values(tsv) format. There can be multiple genomic sequence file in the input directory. And they are seperated to archaea and bacteria when they are profiled.
+
 
 ## CLC Genomics
