@@ -160,3 +160,4 @@ GTDB-TK output will be located in `gtdbtk_out` directory.
 
 ## CLC Genomics
 ![image](https://user-images.githubusercontent.com/42211781/84480169-180e0080-accf-11ea-9106-4a6a63e202f9.png)
+CLC Genomics Home Screen
