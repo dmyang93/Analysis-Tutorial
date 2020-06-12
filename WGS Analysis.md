@@ -161,3 +161,21 @@ GTDB-TK output will be located in `gtdbtk_out` directory.
 ## CLC Genomics
 ![image](https://user-images.githubusercontent.com/42211781/84480169-180e0080-accf-11ea-9106-4a6a63e202f9.png)
 CLC Genomics Home Screen
+
+#### 1. Importing Data
+![CLC_Import1](https://user-images.githubusercontent.com/42211781/84486676-b2267680-acd8-11ea-9554-1b11ce91b030.png)
+![CLC_Import2](https://user-images.githubusercontent.com/42211781/84486681-b2bf0d00-acd8-11ea-8084-125b9efe1d12.png)
+
+#### 2. Quality Control
+![CLC_QC1](https://user-images.githubusercontent.com/42211781/84486642-a8047800-acd8-11ea-920f-e96a1dd4cb67.png)
+![CLC_QCrep](https://user-images.githubusercontent.com/42211781/84486648-a935a500-acd8-11ea-87e1-1249a7e3782e.png)
+
+#### 3. Trim Reads
+![CLC_Trim1](https://user-images.githubusercontent.com/42211781/84486653-aa66d200-acd8-11ea-9998-549ca444c77d.png)
+![CLC_Trim2](https://user-images.githubusercontent.com/42211781/84486656-aaff6880-acd8-11ea-9f66-7615d75bfd0b.png)
+![CLC_Trimrep](https://user-images.githubusercontent.com/42211781/84486658-ab97ff00-acd8-11ea-8b4c-e30d19e49fbc.png)
+
+#### 4. De Novo Assembly
+![CLC_Assembly1](https://user-images.githubusercontent.com/42211781/84486689-b488d080-acd8-11ea-8ff7-e4538eec4225.png)
+![CLC_Assembly2](https://user-images.githubusercontent.com/42211781/84486690-b488d080-acd8-11ea-8fc8-aa590bade37d.png)
+![CLC_Assemblyrep](https://user-images.githubusercontent.com/42211781/84486693-b5216700-acd8-11ea-9933-1acec90dd919.png)
